@@ -1,4 +1,8 @@
+require "pry"
 require 'sqlite3'
 require_relative '../lib/dog'
 
 DB = {:conn => SQLite3::Database.new("db/dogs.db")}
+
+#binding.pry
+#raphy = Dog.new({:name => "raphy", :breed => "puppy"})
